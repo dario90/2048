@@ -25,7 +25,7 @@ public class Board {
 		if (emptyTiles.size() > 0) {
 			int pos = random.nextInt(emptyTiles.size());
 			
-			if (random.nextInt(10) <= 4)
+			if (random.nextInt(10) <= 6)
 				emptyTiles.get(pos).activate(2);
 			else 
 				emptyTiles.get(pos).activate(4);
@@ -68,7 +68,7 @@ public class Board {
 	private boolean checkWin() {
 		for (int i = 0; i < dim; i++)
 			for (int j = 0; j < dim; j++)
-				if(board[dim][dim].getNumber() == target)
+				if(board[i][j].getNumber() == target)
 					return true;
 		return false;
 	}

@@ -37,7 +37,7 @@ public class TextualView implements View {
 				if (board[row][i].getNumber() < 10)
 					System.out.print("+   "+board[row][i].getNumber()+"  ");
 				else if (board[row][i].getNumber() < 100)
-					System.out.print("+  "+board[row][i].getNumber()+"   ");
+					System.out.print("+  "+board[row][i].getNumber()+"  ");
 				else if (board[row][i].getNumber() < 1000)
 					System.out.print("+ "+board[row][i].getNumber()+"  ");
 				else if (board[row][i].getNumber() < 10000)
@@ -51,14 +51,14 @@ public class TextualView implements View {
 			if (board[row][dim-1].getNumber() < 10)
 				System.out.println("+   "+board[row][dim-1].getNumber()+"  +");
 			else if (board[row][dim-1].getNumber() < 100)
-				System.out.println("+  "+board[row][dim-1].getNumber()+"   +");
+				System.out.println("+  "+board[row][dim-1].getNumber()+"  +");
 			else if (board[row][dim-1].getNumber() < 1000)
 				System.out.println("+ "+board[row][dim-1].getNumber()+"  +");
 			else if (board[row][dim-1].getNumber() < 10000)
 				System.out.println("+ "+board[row][dim-1].getNumber()+" +");
 		}
 		else {
-			System.out.print("+      ");
+			System.out.println("+      +");
 		}
 	} 
 }
